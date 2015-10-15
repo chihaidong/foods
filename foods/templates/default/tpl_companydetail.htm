@@ -1,0 +1,118 @@
+  
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+  <tr class=list> 
+    <td> 
+      <table height=200 cellspacing=0 cellpadding=0 width="100%" border=0 bgcolor="#E6E6E6">
+        <tr valign=top> 
+          <td class="companyintro" height="30"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" height="30"  background="images/detailtitle.gif">
+              <tr > 
+                <td  width="30" align="center" ></td>
+                <td >{#company#}</td>
+                <td width="120" align="center" ><span ></span></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tbody> 
+        <tr valign=top> 
+          <td class="companyintro" bgcolor="#FFFFFF" style="padding-top:6px">
+		  <table width="100%" height="180"  border="0" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="282" valign="top"><table width="280" height="100" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#e5e5e5">
+                  <tr>
+                    <td align="center" bgcolor="#FFFFFF"><script>
+function setImg(theURL,px){ 
+
+	imgObj = new Image();
+	imgObj.src = theURL;
+	if(!imgObj.width){
+		document.write("<a href='"+ theURL +"' ><img src='"+ theURL +"'  width='"+ px +"'  border=0 ></a>");
+	}else{
+	if(imgObj.width>=imgObj.height){
+		if(imgObj.width>=px){
+			document.write("<a href='"+ theURL +"' target='_blank'><img src='"+ theURL +"' width='"+ px +"' border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theURL +"' target='_blank'><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}else{
+		if(imgObj.height>=px){
+			document.write("<a href='"+ theURL +"' target='_blank'><img src='"+ theURL +"' height='"+ px +"'  border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theURL +"' target='_blank'><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}
+	}
+	
+}
+                  </script>
+</script><script>setImg('{#picsrc#}',280);</script></td>
+                  </tr>
+                  <tr>
+                    <td height="30" align="center" bgcolor="#FFFFFF"><table width="200"  border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="18"><img src="images/io.gif" width="12" height="12"></td>
+                        <td><a href="{#picsrc#}" class="fontg" target="_blank">{#lanBigPic#}</a></td>
+                        <td width="18"><img src="images/morepic.gif" width="12" height="12"></td>
+                        <td><a href="license/class/" class="fontg">{#lanZsPicMore#}</a></td>
+                        </tr>
+                    </table>                       </td>
+                  </tr>
+                </table>
+                  </td>
+                <td valign="top" ><table width="100%" height="201" border="0" cellpadding="2" cellspacing="1" >
+                  <tr class=list>
+                    <td width="70" height="23" align="center" ><b>{#lanCompanyName#}:<font color="#FF3300"> </font></b></td>
+                    <td height="22"  style="color:#666666" > {#company#}</td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center"><b>{#lanCompanyType#}:</b></td>
+                    <td height="22"  style="color:#666666" > {#companytype#}</td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center" ><b>{#lanZone#}:</b></td>
+                    <td height="22"  style="color:#666666" > {#zone#}</td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center" ><b>{#lanAddr#}:</b></td>
+                    <td height="22"  style="color:#666666" > {#addr#}</td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center" ><b>{#lanBizaddr#}:</b></td>
+                    <td height="22"  style="color:#666666" > {#bizaddr#}</td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center" valign="top" ><b>{#lanCompanyCat#}:</b></td>
+                    <td height="22"  style="color:#666666" valign="top" > {#companycat#}</td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center" ><b>{#lanTradeType#}:</b></td>
+                    <td height="22"  style="color:#666666" >{#tradetype#} </td>
+                  </tr>
+                  <tr class=list>
+                    <td width="70" height="23" align="center" ><b>{#lanFax#}:</b></td>
+                    <td height="22"  style="color:#666666" > {#fax#} </td>
+                  </tr>
+                </table>
+                  </td>
+              </tr>
+            </table>
+            </td>
+        </tr>
+        </tbody> 
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" height="30"   background="images/detailtitle.gif">
+        <tr >
+          <td  width="30" align="center" ></td>
+          <td ><span class="nav">{#lanComIntro#}</span></td>
+          <td width="90" ><span ><img src="images/point_select.gif" width="11" height="11"> <a href="feedback.php" class="fontg">{#lanContactme#} </a></span></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td height="80" valign="top">{#intro#}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

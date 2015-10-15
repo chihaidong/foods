@@ -1,0 +1,75 @@
+<!-start->
+<script>
+function setImg(theURL,theLink,px){ 
+
+	imgObj = new Image();
+	imgObj.src = theURL;
+	if(!imgObj.width){
+		document.write("<a href='"+ theLink +"'  target='blank'><img src='"+ theURL +"'  width='"+ px +"'  border=0 ></a>");
+	}else{
+	if(imgObj.width>=imgObj.height){
+		if(imgObj.width>=px){
+			document.write("<a href='"+ theLink +"'  target='blank'><img src='"+ theURL +"' width='"+ px +"' border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theLink +"'  target='blank'><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}else{
+		if(imgObj.height>=px){
+			document.write("<a href='"+ theLink +"'  target='blank'><img src='"+ theURL +"' height='"+ px +"'  border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theLink +"'  target='blank'><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}
+
+	}
+	
+}
+</script>
+<table width="100%"  cellspacing="0"  cellpadding="2">
+  <tr > 
+    <td height="35" background="images/querytitle.gif" width="110">{#lanProdPic#}</td>
+    <td height="35"  style="padding-left:15px"  background="images/querytitle.gif">{#lanProdName#}</td>
+    <td width="90" align="center" background="images/querytitle.gif">{#lanUpdTime#}</td>
+    <td width="60" background="images/querytitle.gif">{#lanFbStat#}</td>
+    <td align=center height="35" background="images/querytitle.gif" width="48">{#lanModify#}</td>
+    <td align=center height="35" background="images/querytitle.gif" width="48">{#lanDel#}</td>
+  </tr>
+  <!-start-> <!-rowstart-> 
+  <tr class=list> <!-rowstart-> <!-list-> 
+    <td  class="companyquery" align=center> 
+      <table width="80" border="0" cellpadding="2" cellspacing="1" bgcolor="#d2d2d2">
+        <tr>
+          <td align="center" bgcolor="#FFFFFF" ><script>setImg('{#src#}','{#link#}',100);</script></td>
+        </tr>
+      </table>
+    </td>
+    <td   style="padding:15px;" valign="top" > 
+      <a href="{#link#}" class="companytitle" target=_blank >{#title#}</a><br>
+    </td>
+    <td align="center"  class="companyquery">{#uptime#}</td>
+    <td  class="companyquery">{#fbcheck#} </td>
+    <form method="post" action="member_prodmodify.php">
+      <td  class="companyquery" align=center width="48"> 
+        <input type="submit" name="Submit" value="{#lanModify#}" class="button">
+        <input type="hidden" name="id" value="{#id#}">
+      </td></form>
+       <form method="post" action="member_prod.php">  
+      <td  class="companyquery" align=center width="48"> 
+        <input type="submit" name="Submit2" value="{#lanDel#}" class="button" >
+      <input type="hidden" name="id" value="{#id#}">
+      <input type="hidden" name="step" value="del">
+
+    </td></form>
+    
+    <!-list-> <!-rowend-> </tr>
+  <!-rowend-> <!-end-> 
+</table>
+<table height=43 cellspacing=0 cellpadding=4 width="100%" align=center background=images/showpage.gif border=0>
+  <tbody> 
+  <tr> 
+    <td class=pagesinfo width=300>{#PagesInfo#}</td>
+    <td class=pages align=right>{#ShowPages#}</td>
+  </tr>
+  </tbody>
+</table>
+<!-end->

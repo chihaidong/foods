@@ -1,0 +1,37 @@
+<!-start->
+<table width="100%"  cellspacing="0"  cellpadding="3">
+  <tr class="newsquerytitle"> 
+    <td height="35" background="images/querytitle.gif">{#lanArticalTitle#}</td>
+    <td align=center height="25" width="130" background="images/querytitle.gif">{#lanPubTime#}</td>
+    <td align=center height="25" width="60" background="images/querytitle.gif">{#lanChecked#}</td>
+    <td align=center height="25" width="48" background="images/querytitle.gif">{#lanModify#}</td>
+    <td align=center height="25" width="48" background="images/querytitle.gif">{#lanDel#}</td>
+  </tr>
+  <!-start-> <!-rowstart-> 
+  <tr class=list> <!-rowstart-> <!-list-> 
+    <td class="newsquery"><a href="{#link#}" class="newsquery" target="{#target#}"  >{#title#}</a></td>
+    <td  class="newsquerytime" align=center {#bold#}{#red#} width="130">{#dtime#}</td>
+    <td  class="newsquerytime" align=center {#bold#}{#red#} width="60">{#check#}</td>
+    <td  class="newsquerytime" align=center {#bold#}{#red#} width="48"> 
+      <input type="button" name="Button" value="{#lanModify#}" class="button" onClick="window.location='member_guanli1.php?id={#id#}'">
+    </td>
+    <form method="post" action="member_guanli.php">  
+      <td  class="companyquery" align=center width="48"> 
+        <input type="submit" name="Submit2" value="{#lanDel#}" class="button" >
+      <input type="hidden" name="id" value="{#id#}">
+      <input type="hidden" name="step" value="del">
+
+    </td></form>
+    <!-list-> <!-rowend-> </tr>
+  <!-rowend-> <!-end-> 
+</table>
+<table height=43 cellspacing=0 cellpadding=4 width="100%" align=center background=images/showpage.gif border=0>
+  <tbody> 
+  <tr> 
+    <td class=pagesinfo width=300>{#PagesInfo#}</td>
+    <td class=pages align=right>{#ShowPages#}</td>
+  </tr>
+  </tbody> 
+</table>
+<!-end->
+

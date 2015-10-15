@@ -1,0 +1,34 @@
+td,select,input {
+	font-size:12px;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+#editbar {background: #C0C0C0;}
+body.bodybackground {margin:0px; padding:0px; background: threedface; text-decoration: none; border:0px;}
+.overBorder {
+	border-left:1px solid #ffffff;
+	border-top:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-bottom:1px solid #999999;
+	width:53;
+	cursor: default;
+}
+.donwBorder {
+	border:1px solid #dddddd;
+	border-style: inset;
+	width:53;
+	cursor: default;
+}
+.tooloverBorder {
+	border-left:1px solid #ffffff;
+	border-top:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-bottom:1px solid #999999;
+	width:20;
+	cursor: hand;
+}
+.tooldonwBorder {
+	border:1px solid #dddddd;
+	border-style: inset;
+	cursor: hand;
+	width:20;
+}

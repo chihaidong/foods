@@ -1,0 +1,100 @@
+ 
+<table width="100%" border="0" cellspacing="1" cellpadding="0" class=table>
+  <form method="post" name="form" action="member_hdfabu.php" enctype="multipart/form-data">
+    <tr> 
+                  
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" height="30" background="images/detailtitle.gif">
+              <tr> 
+                <td  width="30" align="center" ></td>
+            <td >{#lanHdFb#}</td>
+        </tr>
+      </table>
+        <table width="100%" border="0" cellspacing="1" cellpadding="2" class="table">
+          <tr >
+            <td height="5" colspan="2" align="center" ></td>
+          </tr>
+          <tr > 
+            <td width="100" align="center" height="24" >{#lanHdTitle#}:<b><font color="#FF3300"> 
+              </font></b></td>
+            <td height="22"  style="color:#666666" > 
+              <input name="title" type="text"  class=input  value="{#title#}" size="61" >
+              <font color="#FF3300">*</font></td>
+          </tr>
+          <tr > 
+            <td width="100" align="center" height="24" >{#lanHdIntro#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <textarea name="body" class="textarea"  rows="12" cols="60" >{#body#}</textarea>
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="100" align="center" height="24" >{#lanHdPic#}:<b><font color="#FF3300"> 
+              </font></b></td>
+            <td height="22"  >
+              <input type="file" name="jpg" size="38" class="input">
+            </td>
+          </tr>
+          <tr >
+            <td width="100" height="24" align="center" >{#lanHdAddr#}:</td>
+            <td height="22"  style="color:#666666" ><input name="playaddr" type="text"  class=input id="playaddr"  value="{#playaddr#}" size="49" >
+            <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="100" height="24" align="center" >{#lanHdTime#}:</td>
+            <td height="22"  style="color:#666666" ><input name="playtime" type="text"  class=input id="playtime"  value="{#playtime#}" size="49" >
+            <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="100" height="24" align="center" >{#lanHdExpTime#}:</td>
+            <td height="22"  style="color:#666666" >
+			<select name="yy" id="yy">
+			{#yylist#}
+            
+            </select> 
+			{#strYear#}
+			<select name="mm" id="mm">
+              
+			{#mmlist#}
+            
+            
+            </select>			{#strMonth#}
+              <select name="dd" id="dd">
+                
+			{#ddlist#}
+            
+            
+              </select>              {#strDay#}
+              <select name="hh" id="hh">
+                
+			{#hhlist#}
+            
+            
+              </select>              {#strHour#}
+            <select name="mi" id="mi">
+                
+			{#milist#}
+            
+            
+              </select>            {#strMinus#}<font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="100" height="24" align="center" >{#lanHdPnums#}:</td>
+            <td height="22"  style="color:#666666" ><input name="pnums" type="text"  class=input id="pnums"  value="{#pnums#}" size="4" maxlength="3" > 
+            {#lanPerson#}<font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td height="24" align="center" >{#lanHdXiaofei#}:</td>
+            <td height="22"  style="color:#666666" ><input name="xiaofei" type="text"  class=input id="xiaofei"  value="0" size="4" maxlength="3" > 
+              {#lanYuan#}/{#lanPerson#}<font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="100" align="center" height="24" >&nbsp;</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="submit" name="Submit2" value="{#lanSubmit#}" class="button">
+              <input type="hidden" name="step" value="{#step#}">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>  </form>
+</table>

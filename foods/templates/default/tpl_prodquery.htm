@@ -1,0 +1,56 @@
+<!-start->
+<script>
+function setImg(theURL,theLink,px){ 
+
+	imgObj = new Image();
+	imgObj.src = theURL;
+	if(!imgObj.width){
+		document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"'  width='"+ px +"'  border=0 ></a>");
+	}else{
+	if(imgObj.width>=imgObj.height){
+		if(imgObj.width>=px){
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"' width='"+ px +"' border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}else{
+		if(imgObj.height>=px){
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"' height='"+ px +"'  border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}
+
+	}
+	
+}
+</script>
+<table width="100%"  cellspacing="0"  cellpadding="2">
+  <tr > 
+    <td align=center height="35" background="images/querytitle.gif">{#lanProdPic#}</td>
+    <td height="35"  style="padding-left:10px"  background="images/querytitle.gif">{#lanProdName#}</td>
+    <td align=center height="35" background="images/querytitle.gif">{#lanContactme#}</td>
+  </tr>
+  <!-start-> <!-rowstart-> 
+  <tr class=list> <!-rowstart-> <!-list-> 
+    <td  class="companyquery" align=center width="100" height="31" style="padding:10px" valign="top"> 
+      <table width="80" border="0" cellpadding="2" cellspacing="1" bgcolor="#d2d2d2">
+        <tr>
+          <td align="center" bgcolor="#FFFFFF"><script>setImg('{#src#}','{#link#}',100);</script></td>
+        </tr>
+      </table>
+    </td>
+    <td class="companyquery"  style="padding:10px" valign="top"><img src="images/maintitle.gif" width="11" height="11" > 
+      <a href="{#link#}" class="companytitle" target="{#target#}">{#title#}</a> <a href="{#companylink#}" target="_blank">[{#company#}]</a>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="5">
+        <tr> 
+          <td></td>
+        </tr>
+      </table>
+      {#body#}<br>
+    </td>
+    <td  class="companyquery" align=center  width="80" height="31"><a href="{#feedbacklink#}"><img src="images/comtactme.gif" width="48" height="39" border="0"></a></td>
+    <!-list-> <!-rowend-> </tr>
+  <!-rowend-> <!-end-> 
+</table>
+<!-end->

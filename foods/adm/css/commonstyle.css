@@ -1,0 +1,51 @@
+A:link {TEXT-DECORATION: none}
+A:visited {TEXT-DECORATION: none}
+A:active {TEXT-DECORATION: none}
+A:hover {TEXT-DECORATION: none}
+
+body.NavigatorBar           { margin:0px; padding:0px; background-color: #ffffff; color: #333333;  font-size: 9pt; font-style: normal; text-decoration: none; border:0px; overflow:hidden}
+body.NormalPage             { margin:0px; padding:0px; background-color: #FFFFFF; color: #333333; font-weight: normal; font-size: 9pt; font-style: normal; text-decoration: none; border:0px; scrollbar-face-color: #0068c3; scrollbar-highlight-color: #ffffff; scrollbar-shadow-color: #0068c3; scrollbar-arrow-color: #ffffff; crollbar-base-color: #0068c3; scrollbar-dark-shadow-color: #0068c3;line-height:130%;}
+body.Pop                    { margin-top:0px;margin-left:20px; padding:0px; background-color: #d4d0c8; color: #333333; font-weight: normal; font-size: 12px; font-style: normal; text-decoration: none; border:0px;}
+
+a.Menu                      { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; vlink: #ffffff; alink: #ffffff; }
+a.Menu:hover                { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; }
+a.pages                     { font-weight: normal; font-size: 9pt; color: #333333; text-decoration: none; vlink: #333333; alink: #333333; }
+
+td                          { font-size:9pt; TEXT-DECORATION: none;line-height:130%;}
+td.MenuButton               { font-size:12px; color: #ffffff; background-color: #0068c3; height: 25px; width: 128px; border-style:solid; border-width:1px; border-color:#ffffff #ffffff #ffffff #ffffff ; cursor: hand; }
+td.MenuButtonDown           { font-size:12px; color: #ffffff; background-color: #0068c3; height: 25px; width: 128px; border: 1px inset #EBECEB; cursor: hand; }
+td.MenuButtonz              { font-size:12px; color: #333333; background-color: #ffffff; height: 25px; width: 128px; border: 1px outset; border-style:solid; border-width:1px; border-color:#ffffff #ffffff #ececec #ffffff ; cursor: hand; }
+td.pages                     { font-weight: normal; font-size: 9pt; color: #333333; text-decoration: none; vlink: #333333; alink: #333333; }
+td.title                    { font-size:12px; color: #ffffff; background-color: #0068c3; TEXT-DECORATION: none;}
+td.con                      { font-size:12px; color: #333333; background-color: #f0f0f0; TEXT-DECORATION: none;}
+
+a.conlink                      {font-size:12px;color: #333333;}
+a.conlink:link                   {font-size:12px;color: #333333;}
+a.conlink:visited                   {font-size:12px;color: #333333;}
+a.conlink:active                   {font-size:12px;color: #333333;}
+a.conlink:hover                   {font-size:12px;color: #ff6600;}
+
+
+input {FONT-SIZE: 12px; color: 333333;}
+select {FONT-SIZE: 12px; color: #333333;}
+.input {FONT-SIZE: 12px; color: #333333; HEIGHT: 20px;padding-top: 2px; padding-left: 3px; border: 1px #999999 solid;   background-image: url(../images/inputbg.gif)}
+.input1 {FONT-SIZE: 12px; color: #333333; padding-top: 4px; padding-left: 3px; border: 1px #999999 solid;   background-image: url(../images/inputbg.gif)}
+.button {border:1px outset;height:20px;color: 333333; }
+.intro   { font-size:14px; color: #333333;  TEXT-DECORATION: none;line-height:150%;}
+.titleinput {FONT-SIZE: 12px; color: #ffffff; HEIGHT: 18px;padding-buttom: 2px; padding-left: 2px; border: 1px #ffffff dashed; background-color: #0068c3;}
+
+
+.dtree {color: #666666;font-size: 12.00px;	white-space: nowrap;}
+.dtree img  {border: 0px;	vertical-align: middle;}
+.dtree a   {color: #666666;font-size: 12.00px;	TEXT-DECORATION: none}
+.dtree a.node{color: #666666;white-space: nowrap;padding: 1px 2px 1px 2px;TEXT-DECORATION: none}
+.dtree a.nodeSel {color: #666666;font-size: 12.00px;	white-space: nowrap;	padding: 1px 2px 1px 2px;TEXT-DECORATION: none}
+.dtree a.node:hover {color: #666666;font-size: 12.00px;	TEXT-DECORATION: none}
+.dtree a.nodeSel:hover {color: #666666;	font-size: 12.00px;TEXT-DECORATION: none}
+.dtree a.nodeSel {background-color: #cfdfef;font-size: 12.00px;}
+.dtree .clip {overflow: hidden;}
+.downBorder {border:1px solid #dddddd;	border-style: inset;}
+.upBorder {	border: 1px solid #EEEEEE;}
+
+.list{BACKGROUND-COLOR: expression((this.sectionRowIndex%2==0) ? "#e8e8e8":"#f5f5f5");font-size:12px; }
+.listtd{font-size:12px; color: #333333; background-color: #e8e8e8; TEXT-DECORATION: none;border-bottom:1px #ffffff solid}

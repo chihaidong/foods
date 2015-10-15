@@ -1,0 +1,80 @@
+ 
+<table width="100%" border="0" cellspacing="1" cellpadding="2" class=table>
+  <form method="post" name="form" action="member_infofabu.php" onSubmit="return SelectAll('spe_selec[]', 'select[]')" enctype="multipart/form-data">
+    <tr> 
+                  
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" height="30" background="images/detailtitle.gif">
+              <tr> 
+                <td  width="30" align="center" ></td>
+            <td >{#lanInfoFb#}</td>
+        </tr>
+      </table>
+        <table width="100%" border="0" cellspacing="1" cellpadding="2" class="table">
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanInfoTitle#}:<b><font color="#FF3300"> 
+              </font></b></td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="title"  class=input  value="{#title#}" style="width:380px">
+              <font color="#FF3300">*</font></td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanInfoBody#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <textarea name="body" class="textarea"  rows="15" cols="60" >{#body#}</textarea>
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="90" height="24" align="center" >{#lanInfoCat#}:</td>
+            <td height="22"  style="color:#666666" ><script language=javascript src='js/multicat.js'></script>
+                <table cellspacing=0 cellpadding=0>
+                  <tr>
+                    <td><select style='WIDTH: 139px;font-size:12px;height:90px' multiple size=3 name=spe_funct>
+                        
+			{#CatAll#}
+			        
+                      </select>
+                    </td>
+                    <td align="center" valign="top"><input style='width:96px;height:23px;font-size:12px;border:1px outset;' onClick="JavaScript:AddItem('spe_funct', 'spe_selec[]')" type=button value='{#lanInfoCadd#}' name='Input2'><br>
+<input style='width:96px;height:23px;font-size:12px;border:1px outset;' 
+			onClick="JavaScript:DelItem('spe_selec[]')" type=button value='{#lanInfoCdel#}' name='Input'></td>
+                    <td><select  style='WIDTH: 139px;font-size:12px;height:90px' multiple size=3 name=spe_selec[]>
+                        
+                    
+				{#CatSel#}
+				    
+                  
+                    </select></td>
+                  </tr>
+              </table></td>
+          </tr>
+          <tr >
+            <td width="90" align="center" height="24" >{#lanInfoPic#}:<b><font color="#FF3300"> 
+              </font></b></td>
+            <td height="22"  style="color:#666666" >
+              <input type="file" name="jpg" size="38" class=input>
+            </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanInfoExp#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="radio" name="expday" value="10">
+              10{#lanDay#} 
+              <input type="radio" name="expday" value="30">
+              30{#lanDay#} 
+              <input type="radio" name="expday" value="90" checked>
+              90{#lanDay#} 
+              <input type="radio" name="expday" value="365">
+              365{#lanDay#} </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >&nbsp;</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="submit" name="Submit2" value="{#lanSubmit#}" class="button">
+              <input type="hidden" name="step" value="{#step#}">
+            </td>
+          </tr>
+        </table>
+      </td>
+                </tr>  </form>
+              </table>

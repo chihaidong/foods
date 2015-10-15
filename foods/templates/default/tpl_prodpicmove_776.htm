@@ -1,0 +1,77 @@
+<!-start->
+<DIV align=center>
+<DIV id=aaa style="OVERFLOW: hidden; WIDTH: 776px; HEIGHT: 125px">
+<DIV align=center>
+<TABLE width=100% border=0 align=center cellPadding=0 cellspacing="0" bgcolor="#e5e5e5" cellspace="0">
+<TBODY>
+<TR>
+<TD id=aaa1 vAlign=top>
+<table cellpadding=0 cellspacing=0 width=100% align=center>
+  <tr>
+  <td  valign=top  ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!-start->
+
+<!-rowstart-> 
+	<tr align="center">
+<!-rowstart-> 
+
+<!-menu-> 
+    <td align=center >
+		<!-text->
+		  <table  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tr>
+              <td width="138" valign="top"><table width="138" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><img src="images/recomtop.gif" width="138" height="8"></td>
+                  </tr>
+                  <tr>
+                    <td><table width="138" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="8" background="images/recom2.gif"></td>
+                          <td width="122" height="85" align="center"><a href="{#link#}" target="{#target#}" ><img src="{#src#}" {#smallw#} {#smallh#} border="0"></a></td>
+                          <td width="8" background="images/recom3.gif"></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td height="35" align="center" background="images/recom4.gif"><a href="{#link#}" target="{#target#}" >{#title#}</a></td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+		  <!-text->
+	</td>
+<!-menu->
+
+
+<!-rowend-> 
+</tr>
+<!-rowend->  
+
+<!-end->
+</table></td>
+</tr></table></TD>
+<TD id=aaa2 vAlign=top width=1></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+<SCRIPT>
+var speed1=15 //
+aaa2.innerHTML=aaa1.innerHTML
+function Marquee(){
+if(aaa2.offsetWidth-aaa.scrollLeft<=0)
+aaa.scrollLeft-=aaa.offsetWidth
+else{
+aaa.scrollLeft++
+}
+}
+var MyMrr=setInterval(Marquee,speed1)
+aaa.onmouseover=function() {clearInterval(MyMrr)}
+aaa.onmouseout=function() {MyMrr=setInterval(Marquee,speed1)}
+</SCRIPT>
+<!-end->
+
+<!-more->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="right"> 
+      <td><a href="{#morelink#}" class="more">{#more#}</a></td>
+  </tr>
+</table>
+<!-more->

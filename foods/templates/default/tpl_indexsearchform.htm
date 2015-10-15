@@ -1,0 +1,43 @@
+
+              
+<table width="150" border="0" cellspacing="1" cellpadding="2">
+  <form name="form" action="{#RP#}company/class/">
+    <tr> 
+      <td> 
+        <script language=javascript src='{#RP#}js/zonesearch.js'></script>
+        {#ZoneString#} 
+        <select onKeyUp='if(window.event.keyCode==13) document.form.zoneid.focus();'  onChange=provinceSelChange(form.zoneid,form.Province.value,'{#zoneid#}') name="Province"  style="color:#666666;font-size:12px" >
+          <script language=javascript>document.write(pList.getOptionString('{#Province#}'));
+								</script>
+        </select>
+      </td>
+      <td style="display:none"><select onkeyup='if(window.event.keyCode==13) document.form.regCardNum.focus();'  name="zoneid"  style="color:#666666;font-size:12px">
+        <script language=javascript>
+document.write(pList.getOptionAreasString(form.Province.value,form.zoneid,'{#zoneid#}',1));
+      </script>
+      </select></td>
+      <td><select name="catid">
+        <option value="0">{#lanCompanyClassSel#}</option>
+        
+                      {#catlist#}
+                    
+        
+      </select></td>
+      <td><select name="tradetype">
+        <option value="0">{#lanTradetypeSel#}</option>
+        
+        
+                      {#tradetypelist#}
+                    
+        
+      
+      </select></td>
+      <td><input type="text" name="key" class="input" value="{#key#}" size="18"></td>
+      <td><input name="imageField" type="image" src="images/search3.jpg" width="41" height="21" border="0">
+        <input type="hidden" name="tp" value="search">
+        <input name="showtj" type="hidden" id="showtj" value="0"></td>
+    </tr>
+  </form>
+</table>
+              
+       

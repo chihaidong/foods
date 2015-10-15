@@ -1,0 +1,165 @@
+ 
+<table width="100%" border="0" cellspacing="1" cellpadding="0" class=table>
+  <form method="post" name="form" action="member_companyfabu.php" onSubmit="return SelectAll('spe_selec[]', 'select[]')" enctype="multipart/form-data">
+    <tr> 
+                  
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" height="30" background="images/detailtitle.gif">
+              <tr> 
+                <td  width="30" align="center" ></td>
+          <td >{#lanCompanyCommon#}</td>
+        </tr>
+      </table>
+        <table width="100%" border="0" cellspacing="1" cellpadding="2" class="table">
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanCompanyName#}:<b><font color="#FF3300"> 
+              </font></b></td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="company"  class=input  value="{#company#}" style="width:300px">
+              <font color="#FF3300">*</font></td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanCompanyType#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <select name="companytype"  {#dis#}>
+							{#companytypelist#}
+                           
+                
+              </select>
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanTradeType#}:</td>
+            <td height="22"  style="color:#666666" > {#TradeTypeSel#}</td>
+          </tr>
+          <tr >
+            <td width="90" height="24" align="center" >{#lanZone#}:</td>
+            <td height="22"  style="color:#666666" ><script language=javascript src='js/zone.js'></script>
+              {#ZoneString#}
+                <select onKeyUp='if(window.event.keyCode==13) document.form.zoneid.focus();'  onChange=provinceSelChange(form.zoneid,form.Province.value,'{#zoneid#}') name="Province"  style="color:#666666;font-size:12px" >
+                  <script language=javascript>document.write(pList.getOptionString('{#Province#}'));
+								</script>
+                </select>
+                <div id='zonediv' style='position:absolute; width:150px; height:26px; z-index:1'>
+                  <select onKeyUp='if(window.event.keyCode==13) document.form.regCardNum.focus();'  name="zoneid"  style="color:#666666;font-size:12px">
+                    <script language=javascript>
+document.write(pList.getOptionAreasString(form.Province.value,form.zoneid,'{#zoneid#}',1));
+            </script>
+                  </select>
+                </div>
+                <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="90" height="24" align="center" >{#lanAddr#}:</td>
+            <td height="22"  style="color:#666666" ><input type="text" name="addr"  class=input  value="{#addr#}" size="48" >
+                <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanBizaddr#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="bizaddr"  class=input  value="{#bizaddr#}" size="48" >
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td align="center" height="24" >{#lanFax#}:</td>
+            <td height="22"  style="color:#666666" ><input type="text" name="fax"  class=input  value="{#fax#}" size="30" >
+            </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanBizprod#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod1#}" size="10" >
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod2#}" size="10" >
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod3#}" size="10" >
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod4#}" size="10" >
+              <br>
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod5#}" size="10" >
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod6#}" size="10" >
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod7#}" size="10" >
+              <input type="text" name="bizprod[]"  class=input  value="{#bizprod8#}" size="10" >
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanCompanyCat#}:</td>
+            <td height="22"  style="color:#666666" ><script language=javascript src='js/multicat.js'></script>
+                <table cellspacing=0 cellpadding=0>
+                  <tr>
+                    <td><select style='WIDTH: 139px;font-size:12px;height:90px' multiple size=3 name=spe_funct>
+                        
+			{#CatAll#}
+			        
+                      </select>
+                    </td>
+                    <td align="center" valign="top"><input style='width:96px;height:23px;font-size:12px;border:1px outset;' onClick="JavaScript:AddItem('spe_funct', 'spe_selec[]')" type=button value='{#lanInfoCadd#}' name='Input2'><br>
+<input style='width:96px;height:23px;font-size:12px;border:1px outset;' 
+			onClick="JavaScript:DelItem('spe_selec[]')" type=button value='{#lanInfoCdel#}' name='Input'></td>
+                    <td><select  style='WIDTH: 139px;font-size:12px;height:90px' multiple size=3 name=spe_selec[]>
+                        
+                    
+				{#CatSel#}
+				    
+                  
+                    </select></td>
+                  </tr>
+              </table></td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanCompanyIntro#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <textarea name="intro" class="textarea"  rows="15" cols="60" >{#intro#}</textarea>
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr >
+            <td width="90" align="center" height="24" >{#lanCompanyPic#}:</td>
+            <td height="22"  style="color:#666666" >
+              <input type="file" name="jpg" size="38"  class=input>
+            </td>
+          </tr>
+        </table>
+                  
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" height="30" background="images/detailtitle.gif">
+              <tr> 
+                <td  width="30" align="center" ></td>
+            <td >{#lanContactInfo#}</td>
+        </tr>
+      </table>
+        <table width="100%" border="0" cellspacing="1" cellpadding="2"  class="table">
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanContactName#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="name"  class=input  value="{#name#}" size="15" >
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanTel#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="tel"  class=input  value="{#tel#}" size="30" >
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanPostcode#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="postcode"  class=input  value="{#postcode#}" size="12" >
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanEmail#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="email"  class=input  value="{#email#}" size="48" >
+              <font color="#FF3300">*</font> </td>
+          </tr>
+          <tr > 
+            <td width="90" align="center" height="24" >{#lanUrl#}:</td>
+            <td height="22"  style="color:#666666" > 
+              <input type="text" name="url"  class=input  value="{#url#}" size="48" >
+            </td>
+          </tr>
+          <tr >
+            <td width="90" height="24" align="center" >&nbsp;</td>
+            <td height="22"  style="color:#666666" ><input type="submit" name="Submit2" value="{#lanSubmit#}" class="button">
+            <input type="hidden" name="step" value="{#step#}"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>  </form>
+</table>

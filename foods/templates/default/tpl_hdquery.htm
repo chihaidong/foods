@@ -1,0 +1,90 @@
+<!-start->
+<script>
+function setImg(theURL,theLink,px){ 
+
+	imgObj = new Image();
+	imgObj.src = theURL;
+	if(!imgObj.width){
+		document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"'  width='"+ px +"'  border=0 ></a>");
+	}else{
+	
+	if(imgObj.width>=imgObj.height){
+		if(imgObj.width>=px){
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"' width='"+ px +"' border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}else{
+		if(imgObj.height>=px){
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"' height='"+ px +"'  border=0 ></a>");
+		}else{
+			document.write("<a href='"+ theLink +"' ><img src='"+ theURL +"'  border=0 ></a>");
+		}
+	}
+	}
+	
+}
+</script> 
+<table width="100%"  border="0" cellpadding="8" cellspacing="1" bgcolor="#f0f0f0">
+  <tr>
+    <td><!-start-><!-rowstart-><!-rowstart->
+<!-list-> <table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="26"><img src="images/bbslist.gif" width="15" height="17"></td>
+    <td height="33"><strong>{#lanHdTitle#}:<a href="{#link#}"  class="fontg">{#title#}</a></strong></td>
+    <td width="180" style="padding-right:12px"><img src="images/point_select.gif" width="11" height="11"> {#lanPubTime#}:{#uptime#}</td>
+    <td width="180" align="right" style="padding-right:12px"><img src="images/x25.gif" width="14" height="11"> {#lanHdByName#}:<a href="{#companylink#}">{#name#}</a> - <a href="{#feedbacklink#}">{#lanContactme#}</a></td>
+  </tr>
+</table>
+<table width="90%" height="3"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#e2e2e2">
+  <tr>
+    <td align="right"><table width="8" height="3" border="0" cellpadding="0" cellspacing="0" bgcolor="#f0f0f0">
+        <tr>
+          <td></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="3" valign="bottom" bgcolor="#e2e2e2">
+	<table width="100%" height="8"  border="0" cellpadding="0" cellspacing="0" bgcolor="#f0f0f0">
+        <tr>
+          <td></td>
+        </tr>
+    </table></td>
+    <td><table width="100%" align="center"  cellpadding="2"  cellspacing="0" bgcolor="#FFFFFF" class=table style="cursor:hand;" onMouseOver="this.bgColor='#f2f8fb'"  onMouseOut="this.bgColor='#FFFFFF'" onClick="window.location='{#link#}'">
+      <tr >
+        <td  class="companyquery" align=center width="130" height="31" style="padding:10px"><table width="80" border="0" cellpadding="2" cellspacing="1" bgcolor="#d2d2d2">
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"><script>setImg('{#src#}','{#link#}',100);</script></td>
+            </tr>
+        </table>
+          </td>
+        <td align="right" valign="top" class="companyquery"  style="padding:10px"><table width="96%" height="30" border="0" cellpadding="2" cellspacing="1">
+              <tr>
+                <td width="50%">{#lanHdAddr#}:{#playaddr#}</td>
+                <td>{#lanHdPnums#}:{#pnums#}{#lanPerson#}</td>
+                <td width="80" rowspan="3" valign="top"><font color="#ff6600">{#saystat#}</font></td>
+              </tr>
+              <tr>
+                <td width="50%">{#lanHdTime#}:{#playtime#}</td>
+                <td>{#lanHdXiaofei#}:{#xiaofei#}{#lanYuan#}/{#lanPerson#}</td>
+                </tr>
+              <tr>
+                <td width="50%">{#lanHdExpTime#}:{#exptime#}</td>
+                <td>{#lanHdAddnums#}:{#addnums#}{#lanPerson#}</td>
+                </tr>
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<br>
+<!-list-> 
+<!-rowend-><!-rowend->
+<!-end-> 
+</td>
+  </tr>
+</table>
+<!-end->

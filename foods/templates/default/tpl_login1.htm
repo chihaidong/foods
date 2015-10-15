@@ -1,0 +1,26 @@
+<!-menu-> 
+<table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
+                <form method=post action={#RP#}admin.php> <tr>
+                  <td width="12">&nbsp;</td>
+                  <td>{#lanMemberUser#}:
+                      <input name="muser" type="text" style="width:100px;border:1px #a2a2a2 solid;height:18px;background-image: url(images/inputbg.gif)" id="muser">
+                    {#lanMemberPass#}:
+                    <input name="mpass" type="password" style="width:100px;border:1px #a2a2a2 solid;height:18px;background-image: url(images/inputbg.gif)" id="mpass"></td>
+                  <td width="48" align="center"><input name="imageField" type="image" src="images/denglu.gif" width="40" height="19" border="0"></td>
+                  <td width="48"><a href="{#RP#}reg.php"><img src="images/zhuce.gif" width="40" height="19" border="0"></a></td>
+                  <td width="100" align="center"><a href="{#RP#}lostpass.php"><img src="images/lost.gif" width="87" height="32" border="0"></a></td>
+                </tr></form>
+</table>
+<!-menu->
+
+<!-menunow->
+<table width=90% cellspacing=1 cellpadding=4 align=center height="32">
+  <tr>
+    <td width="12" >&nbsp;</td> 
+    <td colspan="2" >{#user#} 
+      {#lanLoninNTC#} 
+    <a href="{#RP#}member_myfeedback.php">{#lanMemberfNums#}{#fnums#}{#strPagesTotalEnd#}</a>  <a href={#RP#}member.php>{#lanMemberCenter#}</a>  <a href={#RP#}logout.php>{#lanMemberExit#}</a> </td>
+  </tr>
+</table>
+<!-menunow->
+

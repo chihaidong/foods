@@ -1,0 +1,67 @@
+
+              
+<table width="150" border="0" cellspacing="1" cellpadding="2" align="center">
+  <form name="form" action="{#RP#}products/class/">
+    <tr> 
+      <td> 
+        <script language=javascript src='{#RP#}js/zonesearch.js'></script>
+        {#ZoneString#} 
+        <select onKeyUp='if(window.event.keyCode==13) document.form.zoneid.focus();'  onChange=provinceSelChange(form.zoneid,form.Province.value,'{#zoneid#}') name="Province"  style="color:#666666;font-size:12px" >
+          <script language=javascript>document.write(pList.getOptionString('{#Province#}'));
+								</script>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <select onKeyUp='if(window.event.keyCode==13) document.form.regCardNum.focus();'  name="zoneid"  style="color:#666666;font-size:12px">
+          <script language=javascript>
+document.write(pList.getOptionAreasString(form.Province.value,form.zoneid,'{#zoneid#}',1));
+</script>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <select name="catid">
+          <option value="0">-- {#lanProdClassSel#} --</option>
+                      {#catlist#}
+                    
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <select name="showtj">
+          <option value="0">-- {#lanCompanyTjSel#} --</option>
+          <option value="1">{#lanProdTjOnly#}</option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="hidden" name="tp" value="search">
+        <select name="infotime">
+          <option value="0">-- {#lanProdTimeSel#} --</option>
+          <option value="1">{#lanProdTimeSel1#}</option>
+          <option value="3">{#lanProdTimeSel2#}</option>
+          <option value="7">{#lanProdTimeSel3#}</option>
+          <option value="10">{#lanProdTimeSel4#}</option>
+          <option value="30">{#lanProdTimeSel5#}</option>
+        </select>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="text" name="key" class="input" value="{#key#}" size="20">
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <input name="imageField" type="image" src="images/search1.gif" width="63" height="20" border="0">
+      </td>
+    </tr>
+  </form>
+</table>
+              
+       
